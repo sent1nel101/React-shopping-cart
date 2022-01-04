@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import "./CartItem.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlus, faMinus} from '@fortawesome/free-solid-svg-icons'
 
 function CartItem(props) {
   const [count, setCount] = useState(0);
@@ -25,11 +27,9 @@ function CartItem(props) {
     <div className="CartItem">
       <h3>{props.name}</h3>
       <p>Qty: {props.qty}</p>
-      <button onClick={handleAddItem}>+</button>
-      <button onClick={handleRemoveItem} disabled={props.qty <= 1}>
-        -
-      </button>
-      <h3 id="count">${(props.qty * props.price).toFixed(2)}</h3>
+      <button onClick={handleAddItem}><FontAwesomeIcon style={{color: 'green'}} icon={faPlus} /></button>
+      <button onClick={handleRemoveItem} disabled={props.qty <= 1}><FontAwesomeIcon style={{color: 'red'}} icon={faMinus} /></button>
+      <p id="count">${(props.qty * props.price).toFixed(2)}</p>
       <br />
     </div>
   );

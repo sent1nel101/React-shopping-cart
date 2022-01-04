@@ -21,9 +21,13 @@
 }
 
 .CartItem button {
-  width: 3%;
-  border-radius: 50%;
-  text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 5%;
+    border-radius: 50%;
+    text-align: center;
 }
 .CartItem #count {
   text-align: end;
