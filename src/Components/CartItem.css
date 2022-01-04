@@ -23,6 +23,7 @@
 .CartItem button {
   width: 3%;
   border-radius: 50%;
+  text-align: center;
 }
 .CartItem #count {
   text-align: end;
