@@ -1,0 +1,29 @@
+.CartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #4d4d4d;
+  color: white;
+  padding: 1rem;
+  font-variant: small-caps;
+  border-radius: 15px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 8px black;
+  width: 60%;
+}
+.CartItem h3 {
+  text-align: start;
+}
+
+.CartItem * {
+  width: 25%;
+}
+
+.CartItem button {
+  width: 3%;
+  border-radius: 50%;
+}
+.CartItem #count {
+  text-align: end;
+}

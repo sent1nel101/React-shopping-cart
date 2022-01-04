@@ -1,25 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Cart from './Components/Cart'
 
-function App() {
+const items = [
+  { id: 1, name: "Taco Seasoning", price: 2.99, qty: 4 },
+  { id: 2, name: "Ground Beef", price: 6.59, qty: 1 },
+  { id: 3, name: "Salsa", price: 3.95, qty: 2 }
+];
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cart items={items} />
     </div>
   );
 }
-
-export default App;
